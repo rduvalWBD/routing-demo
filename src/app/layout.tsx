@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import '@/styles/globals.css';
 
 // app/layout.tsx
 export const metadata: Metadata = {
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
   },
   description: 'A demo of Next.js routing features',
 };
+
 
 export default function RootLayout({
   children,
@@ -24,6 +26,9 @@ export default function RootLayout({
         <footer style={{ backgroundColor: 'ghostwhite', padding: '1rem' }}>
           <p>footer</p>
         </footer>
+        <h1 className='text-3xl font-bold underline bg-amber-700'>
+        Hello world!
+    </h1>
       </body>
     </html>
   );

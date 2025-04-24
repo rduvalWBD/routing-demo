@@ -2,7 +2,9 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import '@/app/styles/globals.css';
+import { ReactNode } from 'react';
+import '@/styles/globals.css';
+
 
 const navLinks = [
   { href: '/', name: 'Home' },
@@ -11,7 +13,6 @@ const navLinks = [
   { href: '/forgot-password', name: 'Forgot Password' },
 ];
 
-import { ReactNode } from 'react';
 
 export default function AuthLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
@@ -28,7 +29,7 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
                   href={link.href}
                   key={link.name}
                   className={`mr-4 ${
-                    isActive ? 'font-bold text-red-500' : 'text-blue-500'
+                    isActive ? 'font-bold text-red-500 bg-amber-400' : 'text-blue-500 bg-amber-400'
                   }`}
                 >
                   {link.name}

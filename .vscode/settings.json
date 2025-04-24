@@ -1,16 +1,16 @@
 {
-  "tailwindCSS.includeLanguages": {
-    "html": "html",
-    "javascript": "javascript",
-    "javascriptreact": "javascriptreact",
-    "typescript": "typescript",
-    "typescriptreact": "typescriptreact",
-    "css": "css"
+  "files.associations": {
+    "*.css": "tailwindcss"
   },
   "editor.quickSuggestions": {
-    "strings": true
+    "strings": "on"
   },
-  "css.validate": false,
+    "tailwindCSS.includeLanguages": {
+      "plaintext": "html",
+      "javascript": "javascriptreact",
+      "typescript": "typescriptreact",
+    },
   "tailwindCSS.emmetCompletions": true,
-  "editor.inlineSuggest.enabled": true
+  "tailwindCSS.experimental.configFile": "C:/Git/routing-demo/src/styles/globals.css",
+  "workbench.iconTheme": "vscode-icons",
 }
